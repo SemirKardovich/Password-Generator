@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient( 45deg, rgb(1, 93, 93), rgb(1, 56, 93));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 10px;
+    max-width: 350px;
+    width: 100%;
+    background-color: #444;
+    padding: 3rem 1rem 2rem;
+    border-radius: 15px;
+    box-shadow:  0px 5px 15px  rgba(0, 0, 0, 0.671);
+}
+
+.container h2{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: rgb(70, 131, 172);
+    margin-bottom: 2rem;
+}
+/* Screen */
+
+.screen {
+    width: 100%;
+    height: 60px;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.result {
+    flex: 1 1 90%;
+    color: #f4f4f4;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.clip-btn{
+    height: 50px;
+    background-color: #444;
+    color: rgb(70, 131, 172);
+    border: 2px solid  rgb(70, 131, 172);
+    border-radius: 5px;
+    font-size: 15px;
+    flex: 1 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+.clip-btn:hover {
+    cursor: pointer;
+    transform: scale(.95);
+}
+/* End Screen */
+
+/* Settings */
+.setting {
+    color:  rgb(70, 131, 172);
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+/* End Settings */
+
+/* Generate btn */
+.generate {
+    margin-top: 1rem;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color:  rgb(70, 131, 172);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #f4f4f4;
+    border: none;
+    outline: none;
+}
+.generate:hover {
+    cursor: pointer;
+    transform: scale(.95);
+}
+/* End Generate btn */
+
+@media screen and (max-width:350px) {
+    .result,
+    .setting {
+        font-size: 16px;
+    }
+    .clip{
+        height: 45px;
+    }
+}
