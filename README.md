@@ -16,6 +16,8 @@ This application is easy to use and it offers users to choose which elements to 
 * HTML
 * CSS
 * JavaScript
+* Visual Studio Code
+* [Browser Character Set](https://net-comber.com/charset.html)
 
 ## 🔗 Check it out below
 
