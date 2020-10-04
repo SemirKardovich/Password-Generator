@@ -19,4 +19,4 @@ This application is easy to use and it offers users to choose which elements to 
 
 ## 🔗 Check it out below
 
-* [Link to hosted website](https://semirkardovich.github.io/Digital-Crafters/) 👀
+* [Link to hosted website](https://semirkardovich.github.io/Password-Generator/) 👀
