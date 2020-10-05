@@ -13,7 +13,7 @@ const randomFunc = {
 	number: getRandomNumber,
 	symbol: getRandomSymbol
 }
-
+// Events
 clipBtnEl.addEventListener('click', () => {
 	const textarea = document.createElement('textarea');
 	const password = resultEl.innerText;
@@ -35,6 +35,11 @@ generateEl.addEventListener('click', () => {
 	const inculdeNumber = numbersEl.checked;
 	const inculdeSymbol = symbolEl.checked;
 	
+	if(length > 20){
+		alert("Your password cannot contain more than 20 characters");
+		return "";
+	};
+
 	resultEl.innerText = generatePassword(inculdeLower, inculdeUpper, inculdeNumber, inculdeSymbol, length);
 });
 
@@ -45,7 +50,7 @@ function generatePassword(lower, upper, number, symbol, length) {
 	
 	// Doesn't have a selected type
 	if(typesCount === 0) {
-		return '';
+		return "";
 	}
 	
 	// create a loop
